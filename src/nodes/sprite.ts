@@ -1,6 +1,6 @@
 import {EntityNode} from "./entity";
 import {Spritesheet} from "../spritesheet";
-import {Params} from "./types";
+import {Params} from "../types/types";
 
 export class SpriteNode extends EntityNode {
     color?: string

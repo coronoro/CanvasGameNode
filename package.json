@@ -1,5 +1,5 @@
 {
-  "name": "canvas-node",
+  "name": "canvas-game-node",
   "type": "module",
   "version": "0.0.1",
   "license": "MIT",
@@ -8,6 +8,22 @@
   "include": [
     "src/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/canvas-game-nodes.es.js",
+      "require": "./dist/canvas-game-node.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/*/test",
+    ".md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coronoro/CanvasGameNode.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

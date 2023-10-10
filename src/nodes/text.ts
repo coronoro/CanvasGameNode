@@ -1,5 +1,5 @@
 import {EntityNode} from "./entity";
-import {Params} from "./types";
+import {Params} from "../types/types";
 
 export class TextNode extends EntityNode {
     text?: string

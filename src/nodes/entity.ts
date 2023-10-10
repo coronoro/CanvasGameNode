@@ -1,7 +1,6 @@
 import {Coordinate} from "../vector";
 import {GameObject} from "./game-object";
-import {Params} from "./types";
-import {Entity} from "../../entities/entity";
+import {Params} from "../types/types";
 
 
 export class EntityNode implements GameObject {
@@ -46,7 +45,7 @@ export class EntityNode implements GameObject {
 
     }
 
-    collides(entity: Entity) {
+    collides(entity: EntityNode) {
         return false
     }
 

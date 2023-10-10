@@ -1,4 +1,4 @@
-import {Params} from "./nodes/types";
+import {Params} from "./types/types";
 
 export class Spritesheet {
     constructor(params: Params<Spritesheet>) {
