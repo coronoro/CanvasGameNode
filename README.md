@@ -1,1 +1,1 @@
-# CanvasNode
+# Canvas Game Node
