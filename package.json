@@ -1,26 +1,26 @@
 {
   "name": "canvas-game-node",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "license": "MIT",
-  "main": "src/index.ts",
-  "outDir": "lib",
-  "exports": {
-    ".": {
-      "import": "./dist/canvas-game-nodes.es.js",
-      "require": "./dist/canvas-game-node.umd.js",
-      "types": "./dist/types/index.d.ts"
-    }
-  },
   "files": [
     "src",
     "dist",
     "!dist/*/tests",
     ".md"
   ],
+  "types": ".dist/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/coronoro/CanvasGameNode.git"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/canvas-game-nodes.es.js",
+      "import": "./dist/canvas-game-nodes.es.js",
+      "require": "./dist/canvas-game-node.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
   },
   "scripts": {
     "dev": "vite",
