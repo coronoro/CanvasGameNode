@@ -1,7 +1,7 @@
-import {EntityNode} from "./entity";
-import {Params} from "../types/types";
+import {Node2d} from "./node-2d";
+import {Params} from "../../types/types";
 
-export class TextNode extends EntityNode {
+export class TextNode extends Node2d {
     text?: string
     font?: string
     color?: string

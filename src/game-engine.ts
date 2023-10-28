@@ -12,3 +12,5 @@ export const startGame = (update: (delta:number)=>void) => {
     window.requestAnimationFrame(gameLoop)
 }
 
+
+
